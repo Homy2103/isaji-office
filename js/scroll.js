@@ -20,7 +20,7 @@ function PageTopAnime() {
     }
     
     var wH = window.innerHeight;
-    var footerPos =  $('#footer').offset().top;
+    var footerPos =  $('#footer').offset();
     if(scroll+wH >= (footerPos+10)) {
         var pos = (scroll+wH) - footerPos+10
         $('#page-top').css('bottom',pos);
