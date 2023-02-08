@@ -362,11 +362,14 @@ header
 /* ========================================================
 top
 ======================================================== */
-.mainarea-top {
-    position:relative;
-    height: calc(var(--vh, 1vh) * 100);
+
+@media all and (min-width: 768px) {
+.mainarea-top { position:relative; height: calc(var(--vh, 1vh) * 100);}
 }
 
+@media all and (max-width: 767px) {
+    .mainarea-top { position:relative; height: calc(var(--vh, .95vh) * 100);}
+    }
 /* ========================================================
 slider
 ======================================================== */
